@@ -1,7 +1,7 @@
 # ip.cotyhamilton.com
 
 ```sh
-curl ip.coty.hamilton # or https://ip.coty.hamilton
+curl ip.cotyhamilton.com # or https://ip.cotyhamilton.com
 # 8.0.0.85
 ```
 
