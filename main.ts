@@ -1,1 +1,0 @@
-Deno.serve((_req, info) => new Response(info.remoteAddr.hostname + "\n"));

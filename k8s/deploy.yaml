@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ip
+  labels:
+    app: ip
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ip
+  template:
+    metadata:
+      labels:
+        app: ip
+    spec:
+      containers:
+        - name: deno
+          image: denoland/deno:alpine
+          workingDir: /home/deno
+          args:
+            - deno
+            - serve
+            - --port
+            - "8000"
+            - mod.ts
+          ports:
+            - containerPort: 8000
+          volumeMounts:
+            - name: config-volume
+              mountPath: /home/deno/
+          resources:
+            requests:
+              memory: 10Mi
+              cpu: 1m
+            limits:
+              memory: 128Mi
+              cpu: 100m
+      volumes:
+        - name: config-volume
+          configMap:
+            name: deno-app
+            items:
+              - key: mod.ts
+                path: mod.ts

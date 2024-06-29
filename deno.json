@@ -1,0 +1,5 @@
+{
+  "tasks": {
+    "dev": "deno serve --unstable-hmr mod.ts"
+  }
+}
