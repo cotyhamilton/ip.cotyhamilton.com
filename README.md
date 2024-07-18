@@ -1,8 +1,11 @@
-# ipv6.cotyhamilton.com
+# ip.cotyhamilton.com
 
 ```sh
-curl -L ipv6.cotyhamilton.com # or curl https://ipv6.cotyhamilton.com
+curl -L6 ip.cotyhamilton.com # or curl -6 https://ip.cotyhamilton.com
 # 2600:dead:ba11:face:cafe:babe:bo0b:0000
+
+curl -4L ip.cotyhamilton.com # or curl -4 https://ip.cotyhamilton.com
+# 8.0.0.85
 ```
 
 ## run dev server
