@@ -12,7 +12,7 @@ curl -L4 ip.cotyhamilton.com # or curl -4 https://ip.cotyhamilton.com
 
 ```sh
 deno task dev
-# Task dev deno run --unstable-hmr --allow-net mod.ts
+# Task dev deno run --watch-hmr --allow-net mod.ts
 # HMR Process started.
-# Listening on http://localhost:8000/
+# Listening on http://0.0.0.0:8000/ (http://localhost:8000/)
 ```
