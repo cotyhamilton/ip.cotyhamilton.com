@@ -1,11 +1,24 @@
 # ip.cotyhamilton.com
 
 ```sh
-curl -L6 ip.cotyhamilton.com # or curl -6 https://ip.cotyhamilton.com
-# 2600:dead:ba11:face:cafe:babe:b00b:0000
+curl -L ip.cotyhamilton.com
+```
 
-curl -L4 ip.cotyhamilton.com # or curl -4 https://ip.cotyhamilton.com
+```sh
+curl -L ip.cotyhamilton.com
 # 8.0.0.85
+```
+
+> [!WARNING]
+> currently unavailable until deno deploy ea supports ipv6
+
+```sh
+curl -L6 ip.cotyhamilton.com
+```
+
+```sh
+curl -L6 ip.cotyhamilton.com
+# 2600:dead:ba11:face:cafe:babe:b00b:0000
 ```
 
 ## run dev server
