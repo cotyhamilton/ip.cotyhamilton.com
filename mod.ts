@@ -9,5 +9,9 @@ Deno.serve((request, info) => {
       span?.setAttribute(`http.request.header.${key.toLowerCase()}`, value);
     }
   }
-  return new Response(info.remoteAddr.hostname + "\n");
+  return new Response(info.remoteAddr.hostname + "\n", {
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+    },
+  });
 });
